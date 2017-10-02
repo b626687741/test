@@ -1,0 +1,66 @@
+<body>
+	<header>
+		<h1>Some Cool HTML5 Tags</h1>
+	</header>
+
+	<h2>Cool Stuff</h2>
+
+	<p>A description list, with terms and descriptions:</p>
+
+	<dl>
+
+		<dt>Summer</dt>
+		<dd>Hot</dd>
+		<!--             The <ddt> tag is used to define a term in a description list.-->
+		<dt>Winter</dt>
+		<!--             The <dd> tag is used to describe a term/name in a description list, it describes each term/name)-->
+		<dd>Cold</dd>
+	</dl>
+
+	<h3>Tags that don't require closing:</h3>
+
+
+	<p>This line of text contains
+		<br>a br line break tag.</p>
+
+	<p>The hr tag defines a thematic break in an HTML page (e.g. a change of topic):</p>
+
+	<p>Dogs</p>
+
+	<hr>
+
+	<p>Cats</p>
+
+	<hr>
+
+	<p>The figure tag specifies self-contained content, like illustrations, diagrams, photos, etc.</p>
+	<figure>
+		<!--       Note: The <figcaption> tag defines a caption for a <figure> element.
+		           Can be first or last child of figure element-->
+<!-- 		<figcaption>Fig1. - A random image with an upper caption.</figcaption> -->
+		<!--       Note: title is a global attribute, which means it can be applied to all HTML tags.
+        -->
+
+		<!-- Image Credit to http://loremflickr.com/-->
+
+		<img src="http://loremflickr.com/400/200" alt="A random image" title="Image Credit to http://loremflickr.com" />
+		<figcaption>Fig1. - A random image with a lower caption.</figcaption>
+	</figure>
+
+	<hr>
+
+	<h2>Responsive images:</h2>
+
+	<p> The picture tag allows you to place multiple source tags, each specifying different image filenames along with the conditions under which they should be loaded:</p>
+
+	<picture>
+		<source srcset="https://dummyimage.com/400x200.jpg/990/fff" media="(max-width: 800px)">
+		<source srcset="https://dummyimage.com/800x400.jpg/09f/fff">
+		<img src="https://dummyimage.com/400x200.jpg/990/fff" alt="My Responsive image" title="My Responsive image">
+	</picture>
+
+	<footer>
+		<p>&copy;
+			<time datetime="2017">2017</time> Acme Tags Inc.</p>
+	</footer>
+</body>
